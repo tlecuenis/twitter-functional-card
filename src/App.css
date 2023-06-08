@@ -1,7 +1,11 @@
 .card-container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.spacing{
+  display: flex;
+  justify-content: space-between;
 }
 
 img{
@@ -13,13 +17,18 @@ img{
 }
 
 .description{
-  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 4px;
   color: white;
   font-size: 0.8rem;
 } 
 
 .add {
   display: flex;
+  align-items: flex-start;
   gap: 4px;
   opacity: 0.6;
 }
@@ -28,8 +37,18 @@ img{
   margin-left: 6px;
   padding: 6px 16px;
   
-  border: 0;
+  border: 1px solid transparent;
   border-radius: 99px;
   font-weight: bold;
-  
+}
+
+.follow:hover{
+  background-color: gray;
+  cursor: pointer;
+}
+
+.is-following:hover{
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.05);
+  color: red;
 }

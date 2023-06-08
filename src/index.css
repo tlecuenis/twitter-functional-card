@@ -11,3 +11,10 @@
   display: grid;
   place-content: center;
 }
+
+/* en vez de poner margin a cada componente, se le pone un gap al contenedor */
+.app{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
