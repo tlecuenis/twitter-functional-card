@@ -47,8 +47,30 @@ img{
   cursor: pointer;
 }
 
+.is-following{
+  width: 130px;
+}
+
 .is-following:hover{
   border: 1px solid red;
   background-color: rgba(255, 0, 0, 0.05);
   color: red;
+}
+
+.is-following:hover .follow-unfollow{
+  display: block;
+}
+
+.is-following:hover .follow-text{
+  display: none;
+}
+
+.follow-unfollow{
+  display: none;
+}
+
+.twitter-follow{
+  padding: 0 5px;
+  background-color: rgb(180, 180, 180, 0.2);
+  border-radius: 5px;
 }

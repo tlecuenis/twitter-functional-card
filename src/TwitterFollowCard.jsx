@@ -26,12 +26,15 @@ export const TwitterFollowCard = ({name, userName}) => {
                     <strong>{name}</strong>
                     <div className='add'>
                         <span className='twitter-at'>@{userName}</span>
-                        <span className='twitter-follow'>{isFollowing ? 'Te sigue' : null}</span>
+                        {isFollowing ? <span className='twitter-follow'>Te sigue</span>: null}
                     </div>
                 </div>
             </div>
             
-            <button className={buttonClassName} onClick={handleClick}>{text}</button>
+            <button className={buttonClassName} onClick={handleClick}>
+                <span className="follow-text">{text}</span>
+                <span className="follow-unfollow">Dejar de seguir</span>
+            </button>
         
         </article>
     )
